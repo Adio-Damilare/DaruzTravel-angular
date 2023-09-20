@@ -1,0 +1,207 @@
+section{
+    display: grid;
+    grid-template-columns:30% 68%;
+    background-color: #144FCC;
+    margin: 40px 0px;
+    padding:  60px 20px;
+    color: white;
+    gap: 20px;
+    justify-content: space-around;
+}
+section #firstmain{
+    display: flex;
+    flex-direction: column;
+}
+section #firstmain h2{
+    padding:  0 0 20px 0;
+}
+
+section #firstmain p{
+    padding: 5px 0;
+    font-size: 16px;
+
+}
+section #firstmain p span{
+    font-weight: bold;
+}
+section #firstmain div{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+#secondMain{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+}
+
+#secondMain h3{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+#secondMain a{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+#secondMain a span{
+    background-color: yellow;
+    padding: 1px 5px;
+    color: #5239B2;
+    border-radius: 5px;
+
+}
+@media (max-width:969px) and (min-width:817px) {
+    section{
+        display: grid;
+        grid-template-columns:35% 62%;
+        
+    }
+    section #firstmain div{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    #secondMain{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    #secondMain div{ 
+        width: 30%;
+    }
+#secondMain div:nth-child(4){ 
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width:817px) and (min-width:673px) {
+    section{
+        display: grid;
+        grid-template-columns:35% 62%;
+        
+    }
+    section #firstmain div{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    section #firstmain div{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    #secondMain{
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+    #secondMain div{ 
+        width: 45%;
+    }
+    
+    #secondMain div:nth-child(3),#secondMain div:nth-child(4){ 
+        margin-top: 20px;
+    }
+  
+    
+}
+@media (max-width:673px) and (min-width:480px) {
+    section{
+        display: grid;
+        grid-template-columns:45% 50%;
+        
+    }
+    section #firstmain div{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: flex-start;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    #secondMain{
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+    #secondMain div{ 
+        width: 80%;
+    }
+    
+    #secondMain div:nth-child(2),#secondMain div:nth-child(3),#secondMain div:nth-child(4){ 
+        margin-top: 20px;
+    }
+  
+    
+}
+@media (max-width:480px) and (min-width:428px) {
+    section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section>main{
+        width: 100%;
+    }
+    section #firstmain div{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: flex-start;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    #secondMain{
+        display: flex;
+        gap: 3px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #secondMain div{ 
+        width: 47%;
+    }
+
+    #secondMain div:nth-child(3),#secondMain div:nth-child(4){ 
+        margin-top: 20px;
+    }
+  
+    
+}
+@media (max-width:428px) and (min-width:48px) {
+    section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section>main{
+        width: 100%;
+    }
+    section #firstmain div{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: flex-start;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    #secondMain{
+        display: flex;
+        gap: 3px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #secondMain div{ 
+        width: 80%;
+    }
+    #secondMain div h3{ 
+        text-align: center;
+    }
+
+    #secondMain div{ 
+        margin-top: 40px;
+    }
+  
+    
+}

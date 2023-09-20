@@ -1,0 +1,151 @@
+
+.secondDiv{
+    background: url(../../../assets/traveller.png)
+    no-repeat center top;
+    min-height: 775px;
+    background-size: 775px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:200px;
+    width: 100%;
+    position: relative;
+    padding: 40px 30px;
+
+}
+.disNone{
+    display: none;
+    background: url(../../../assets/traveller.png)
+    no-repeat center top;
+    height: 775px;
+    background-size: 775px auto;
+}
+
+.secondDiv>main{
+
+    width: 35%;
+    position: absolute;
+}
+.secondDiv>main>b{
+    font-size: 24px;
+    line-height: 32px;
+}
+.secondDiv>main>p{
+   font-size: 18px;
+    line-height: 28px;
+}
+.secondDiv>main img{
+    width: 80%;
+}
+.item1{
+    left: 2%;
+}
+.item1::after{
+    content: '';
+    position: absolute;
+    background: url(../../../assets/perk-1-arrow.png);
+    width: 127px;
+    height: 57px;
+    left: 90%;
+    top: 0;
+
+}
+.item3::after{
+    content: '';
+    position: absolute;
+    background: url(../../../assets/perk-2-arrow.png);
+    top: 40%;
+    width: 102px;
+    height: 47px;
+    left: calc(100% + 30px);
+    bottom: 150px;
+
+
+}
+.item2::before{
+    content: '';
+    position: absolute;
+    background: url(../../../assets/perk-3-arrow.png);
+    width: 89px;
+    height: 31px;
+    right: calc(100% + 40px);
+    top: 20%;
+}
+.item4::before{
+    width: 100px;
+    height: 32px;
+    background-image: url(../../../assets/perk-4-arrow.png);
+    right: calc(100% + 40px);
+    top: 40px;
+}
+
+.item2{
+    right: 0;
+}
+.item3{
+    bottom: 0;
+    left: 2%;
+}
+.item4{
+    bottom: 0;
+    right: 0;
+}
+.NoneD{
+    display: block;
+}
+
+@media (max-width:1085px) and (min-width:996px){
+    .item4::before,.item2::before,.item3::after,.item1::after{
+        display: none;
+    }
+}
+@media (max-width:996px) and (min-width:6px){
+    .item4::before,.item2::before,.item3::after,.item1::after{
+        display: none;
+    }
+    .secondDiv{
+        background: #ffff
+        no-repeat center top;
+        min-height: 775px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:0px;
+        width: 100%;
+        position: relative;
+        padding: 40px 30px;
+    
+    }
+    .disNone{
+        display: block;
+        background: url(../../../assets/traveller.png)
+        no-repeat center top;
+        height: 775px;
+        background-size: 775px auto;
+    }
+    
+    .secondDiv>main{
+        width: 100%;
+        position: static;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    .secondDiv>main>b{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .secondDiv>main>p{
+       font-size: 20px;
+        line-height: 28px;
+    }
+    .secondDiv>main img{
+        width: 50%;
+        /* max-width: 360px; */
+        min-height: 200px;
+    }
+    .NoneD{
+        display: none;
+    }
+}

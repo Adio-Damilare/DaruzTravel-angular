@@ -1,0 +1,211 @@
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+    background: url(../../../assets/header-bg.png);
+    background-size: cover;
+    aspect-ratio: 800 / 461;
+    background-position: center top;
+    background-size: auto 100%;
+    width: 100%;
+    margin: -30px auto 0 auto;
+    position: relative;
+    inset: 0;
+    height: 740px;
+    justify-content: center;
+    gap:120px;
+
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+#main h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 53px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+
+}
+#main p{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    
+}
+.btn{
+    font-weight: 500;
+    padding: 16px 60px;
+    background-color: #E5A416 ;
+    font-size: 20px;
+}
+#second{
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    height: 185px;
+    text-align: center;
+    padding: 40px 0;
+    bottom:0;
+}
+
+.bgsm{
+    display: none;
+}
+
+@media (max-width:1203px) and (min-width:732px) {
+    #section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+        background: url(../../../assets/header.png);
+        background-size: cover;
+        aspect-ratio: 800 / 461;
+        background-position: center top;
+        background-size: auto 100%;
+        width: 100%;
+        margin: 0px auto 0 auto;
+        position: relative;
+        inset: 0;
+        height: 740px;
+        justify-content: center;
+        gap:120px;
+    
+    }
+}
+@media (max-width:732px) and (min-width:486px) {
+    #section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+        height: 840px;
+        justify-content: center;
+        gap:0px;
+        background: #144fcc;
+        width: 100%;
+       position: relative;
+    
+    }
+    .bgsm{
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        top:10%;
+        padding:0;
+        background: url(../../../assets/header.png);
+        height: 300px;
+        justify-content: center;
+        gap:100px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+
+    }
+    #main{
+        
+        position: absolute;
+        bottom: 30%;
+        
+    }
+    #main h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 43px;
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+    
+    }
+    #main p{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 500;
+        
+    }
+    .btn{
+        font-weight: 500;
+        padding: 16px 60px;
+        background-color: #E5A416 ;
+        font-size: 20px;
+    }
+}
+@media (max-width:486px) and (min-width:7px) {
+    #section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+        height: 840px;
+        justify-content: center;
+        gap:0px;
+        background: #144fcc;
+        width: 100%;
+       position: relative;
+    
+    }
+    .bgsm{
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        top:10%;
+        padding:0;
+        background: url(../../../assets/header.png);
+        height: 300px;
+        justify-content: center;
+        gap:100px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+
+    }
+    #main{
+        
+        position: absolute;
+        bottom: 30%;
+        
+    }
+    #main h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 33px;
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+    
+    }
+    #main p{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 500;
+        
+    }
+    .btn{
+        font-weight: 500;
+        padding: 16px 60px;
+        background-color: #E5A416 ;
+        font-size: 20px;
+    }
+    
+}

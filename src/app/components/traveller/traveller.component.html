@@ -1,0 +1,31 @@
+<section class="main mt-5">
+  <div>
+    <h2 class="h2Size text-center">Packed full of perks</h2>
+    <p class="text-center pt-3" style="font-size: 18px;">
+      Save time, money, and all the headaches. <br/>
+      Get the perks you really need to
+      take your business travel to new heights.
+    </p>
+  </div>
+  <div class=" disNone"></div>
+  <div class="secondDiv">
+    <main *ngFor="let item of [
+    ['Make bookings refundable','With FlexiPerk you can cancel any booking +anytime, anywhere. We’ll refund 80% of the cost. +No questions asked.'],
+    ['24/7/365 customer support','A 7-star customer service team, powered by real +travel experts, that respond whenever you need.'],
+    ['Organizing events just +got a whole lot easier','Kick-offs, off-sites, parties and so much more, +TravelPerk Events helps your teams make +meaningful real-life connections.'],
+    ['Move towards sustainable travel','With GreenPerk you can calculate and offset your +carbon footprint. Get your business moving in the +right direction, today']];let i =index" class="item{{i+1}}">
+        <h2>
+            {{item[0].split("+")[0]}} <br/>
+            {{item[0].split("+")[1]}} 
+
+        </h2>
+        <p>
+            {{item[1].split("+")[0]}}<br class="NoneD"/>
+            {{item[1].split("+")[1]}}<br class="NoneD"/>
+            {{item[1].split("+")[2]}}
+
+        </p>
+        <img src="../../../assets/perk-{{i+1}}.png" alt="">
+    </main>
+  </div>
+</section>

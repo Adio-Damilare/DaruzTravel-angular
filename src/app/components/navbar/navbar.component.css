@@ -1,0 +1,63 @@
+.navbar{
+    background-color: #144FCC;
+    z-index: 2222;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.navbar .container-fluid{
+    padding:12px 60px;
+    gap: 20px;
+}
+.navbar .container-fluid #navbarSupportedContent form {
+   gap:20px;
+}
+.navbar .container-fluid #navbarSupportedContent ul{
+   gap:20px;
+}
+.navbar .container-fluid #navbarSupportedContent form button{
+   padding: 10px 60px;
+   color: #fff;
+}
+.navbar .container-fluid #navbarSupportedContent form .btn1 {
+   background-color: transparent !important;
+   border: 1px solid #fff;
+}
+.navbar .container-fluid #navbarSupportedContent form .btn2 {
+   background-color: #E5A416 !important;
+}
+
+@media (max-width:1148px) and (min-width:485px)  {
+    .navbar .container-fluid{
+        padding:12px 40px;
+        gap: 20px;
+    }
+    .navbar .container-fluid #navbarSupportedContent form {
+       gap:10px;
+    }
+    .navbar .container-fluid #navbarSupportedContent ul{
+       gap:10px;
+    }
+    .navbar .container-fluid #navbarSupportedContent form button{
+        padding: 10px 40px;
+        color: #fff;
+     }
+}
+
+@media (max-width:485px) and (min-width:4px)  {
+    .navbar .container-fluid{
+        padding:12px 40px;
+        gap: 20px;
+    }
+    .navbar .container-fluid #navbarSupportedContent form {
+       gap:10px;
+       flex-direction: column;
+    }
+    .navbar .container-fluid #navbarSupportedContent ul{
+       gap:10px;
+    }
+    .navbar .container-fluid #navbarSupportedContent form button{
+        padding: 10px 60px;
+        color: #fff;
+     }
+}

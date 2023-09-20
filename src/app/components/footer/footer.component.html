@@ -1,0 +1,24 @@
+<section>
+    <main id="firstmain">
+        <h2>Daruz Travel</h2>
+        <p>G2 Ranks TravelPerk as one of the <span>top travel management</span> SaaS on the market</p>
+        <div >
+            <img *ngFor="let item of [1,2,3]"  class="w-100" src="../../../assets/G2rank{{item}}.png" alt="">
+        </div>
+    </main>
+    <main id="secondMain">
+        <div *ngFor="let item of Return()">
+            <h3>{{item[0]}}</h3>
+            <ng-container *ngFor="let list of item[1]">
+                <a routerLink="">
+                    {{list.split('#')[0]}}
+                    <span *ngIf="list.split('#')[1]">
+                        {{list.split('#')[1]}}
+                    </span>
+                </a>
+            </ng-container>
+
+        </div>
+    </main>
+   
+</section>

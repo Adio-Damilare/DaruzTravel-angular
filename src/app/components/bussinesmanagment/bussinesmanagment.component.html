@@ -1,0 +1,17 @@
+<section>
+    <div class="bussiness">
+        <h2 class="h2Size">
+            Business travel management for the whole team
+        </h2>
+        <p>Daruz Travel for Business has a range of features that make business travel easy for everyone.</p>
+    </div>
+    <main>
+        <div  class="subcom" *ngFor="let item of Return();let i =index">
+            <b>For business owners</b>
+            <img src="../../../assets/business-{{i+1}}.webp" alt="">
+            <ul>
+                <li *ngFor="let second of item[1]">{{second}}</li>
+            </ul>
+        </div>
+    </main>
+</section>

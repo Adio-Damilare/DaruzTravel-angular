@@ -1,0 +1,108 @@
+section{
+    margin-top: 60px;
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+
+}
+section>.bussiness   {
+ text-align: center;
+}
+
+section>.bussiness p{
+    font-size: 18px;
+}
+
+section>main{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    gap: 30px;
+}
+.subcom:hover{
+    border: 3px solid blue;
+    transform: scale(01.04);
+    transition: ease-out 0.1s;
+}
+.subcom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-shadow: 0px 8px 10px rgba(0,0,0,0.2), 0px 16px 24px rgba(0,0,0,0.14), 0px 6px 30px rgba(0,0,0,0.12);
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.2), 0px 16px 24px rgba(0,0,0,0.14), 0px 6px 30px rgba(0,0,0,0.12);
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+.subcom b{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.subcom img{
+    width: 100%;
+}
+
+.subcom li{
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+@media (max-width:1166px) and (min-width:992px) {
+    
+    section>main{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media (max-width:992px) and (min-width:745px) {
+    
+    section>main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .subcom{
+        width: 40%;
+    }
+}
+@media (max-width:745px) and (min-width:535px) {
+    
+    section>main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .subcom{
+        width: 60%;
+    }
+}
+@media (max-width:535px) and (min-width:431px) {
+    
+    section>main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        gap: 30px;
+    }
+    .subcom{
+        width: 80%;
+    }
+}
+@media (max-width:431px) and (min-width:4px) {
+    
+    section>main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        gap: 30px;
+    }
+    .subcom{
+        width: 90%;
+    }
+}
